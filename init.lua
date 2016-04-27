@@ -3,9 +3,9 @@
 minetest.register_node("artdeco:1a", {
 	description = "ArtDeco 1a",
 	tiles = {"artdeco_1a.png", "artdeco_1c.png", "artdeco_1b.png"},
- paramtype = "light",
- paramtype2 = "facedir",
- legacy_facedir_simple = true,
+	paramtype = "light",
+ 	paramtype2 = "facedir",
+ 	legacy_facedir_simple = true,
 	groups = {cracky=3, stone=2},
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
@@ -25,7 +25,7 @@ minetest.register_node("artdeco:1b", {
 
 minetest.register_node("artdeco:1c", {
 	description = "ArtDeco 1c",
- tiles = {"artdeco_1a.png", "artdeco_1c.png",
+ 	tiles = {"artdeco_1a.png", "artdeco_1c.png",
  "artdeco_1d.png", "artdeco_1d.png^[transformFX",
 		"artdeco_1b.png", "artdeco_1e.png"},
 	paramtype2 = "facedir",
@@ -88,8 +88,8 @@ minetest.register_node("artdeco:1h", {
 minetest.register_node("artdeco:1i", {
 	description = "ArtDeco 1i",
 	tiles = {"artdeco_1c.png", "artdeco_1a.png", "artdeco_1j.png"},
- paramtype2 = "facedir",
- legacy_facedir_simple = true,
+ 	paramtype2 = "facedir",
+ 	legacy_facedir_simple = true,
 	groups = {cracky=3, stone=2},
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
@@ -1032,7 +1032,7 @@ doors.register("artdeco:estatedoor", {
 	inventory_image = "artdeco_estatedoor_inv.png",
 	tiles = {{ name = "artdeco_estate_door.png", backface_culling = true }},
 	groups = {choppy=2,cracky=2,door=1},
- protected = false,
+ 	protected = false,
 	sounds = default.node_sound_stone_defaults(),
 })
 
