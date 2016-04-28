@@ -966,42 +966,25 @@ minetest.register_node("artdeco:stonewall", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("artdeco:thinstonewall", {
-	description = "ArtDeco thin stone wall",
-	drawtype = "nodebox",
-	tiles = {"artdeco_stonewall.png"},
-	paramtype = "light",
-	paramtype2 = "facedir",
-	legacy_facedir_simple = true,
-	groups = {cracky=3, stone=2},
-	is_ground_content = false,
-	sounds = default.node_sound_stone_defaults(),
-	node_box = {
-		type = "fixed",
-		fixed = {
-			{-0.5, -0.5, -0.1875, 0.5, 0.125, 0.1875},
-		}
-	}
-})
-
-minetest.register_node("artdeco:thinstonewallcorner", {
-	description = "ArtDeco thin stone wall corner",
-	drawtype = "nodebox",
-	tiles = {"artdeco_stonewall.png"},
-	paramtype = "light",
-	paramtype2 = "facedir",
-	legacy_facedir_simple = true,
-	groups = {cracky=3, stone=2},
-	is_ground_content = false,
-	sounds = default.node_sound_stone_defaults(),
-	node_box = {
-		type = "fixed",
-		fixed = {
-			{-0.1875, -0.5, -0.1875, 0.5, 0.125, 0.1875},
-			{-0.1875, -0.5, -0.1875, 0.1875, 0.125, 0.5},
-		}
-	}
-})
+	minetest.register_node("artdeco:thinstonewall", {
+		description = "ArtDeco thin stone wall",
+		tiles = {"artdeco_stonewall.png"},
+		drawtype = "nodebox",
+		node_box = {
+			type = "connected",
+			fixed = {{-1/4, -1/2, -1/4, 1/4, 1/2, 1/4}},
+			connect_front = {{-1/4, -1/2, -1/2,  1/4, 1/2, -1/4}},
+			connect_left = {{-1/2, -1/2, -1/4, -1/4, 1/2,  1/4}},
+			connect_back = {{-1/4, -1/2,  1/4,  1/4, 1/2,  1/2}},
+			connect_right = {{ 1/4, -1/2, -1/4,  1/2, 1/2,  1/4}},
+		},
+		connects_to = { "group:wall", "group:stone" },
+		paramtype = "light",
+		is_ground_content = false,
+		walkable = true,
+		groups = { cracky = 3, wall = 1, stone = 2 },
+		sounds = default.node_sound_stone_defaults(),
+	})
 
 minetest.register_node("artdeco:brownwalltile", {
 	description = "ArtDeco brown wall tile",
