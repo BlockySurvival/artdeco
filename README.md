@@ -1,7 +1,7 @@
 =====================================
 # Artdeco Mod 
-#### by TumeniNodes
-modified by Napiophelios
+## by TumeniNodes
+#### modified by Napiophelios
 =====================================
 
  This mod adds new building blocks to Minetest.
