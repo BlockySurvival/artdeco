@@ -1,1 +1,6 @@
-This mod just adds some new building blocks to Minetest.
+ArtDeco [ LIGHT ]
+
+Based on ArtDeco ver. 1.0 by the greatone
+
+This is not a drop in replacement for
+Artdeco mod by the greatone.
