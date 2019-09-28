@@ -1,6 +1,1 @@
-ArtDeco [ LIGHT ]
-
-Based on ArtDeco ver. 1.0 by the greatone
-
-This is not a drop in replacement for
-Artdeco mod by the greatone.
+Art Deco blocks
