@@ -9,6 +9,7 @@ end
 
 dofile(artdeco.modpath .. '/nodes.lua')
 dofile(artdeco.modpath .. '/moreblocks.lua')
+dofile(artdeco.modpath .. '/facade.lua')
 dofile(artdeco.modpath .. '/nodeboxes.lua')
 dofile(artdeco.modpath .. '/doors.lua')
 dofile(artdeco.modpath .. '/recipes.lua')

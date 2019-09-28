@@ -159,7 +159,7 @@ minetest.register_node("artdeco:2c", {
 
 minetest.register_node("artdeco:italianmarble", {
 	description = "Italian Marble",
-	tiles = {"artdeco_italian_marble.png"},
+	tiles = {"artdeco_italianmarble.png"},
 	groups = {cracky=3, marble=1},
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
