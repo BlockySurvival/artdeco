@@ -267,7 +267,7 @@ minetest.register_node("artdeco:whitegardenstone", {
 minetest.register_node("artdeco:stonewall", {
 	description = "Cobblestone Wall",
 	tiles = {"artdeco_stonewall.png"},
-	groups = {cracky=3},
+	groups = {cracky=3, stone=1},
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
 })
